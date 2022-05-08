@@ -1,0 +1,116 @@
+.mainGame {
+  height: 800px;
+  width: 1200px;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.288);
+  overflow: hidden;
+}
+.mainMenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  h1 {
+    margin: 100px 0 0 0;
+    font-size: 40px;
+  }
+}
+.menuOptions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+
+  button {
+    margin-bottom: 40px;
+    font-size: 25px;
+    width: 200px;
+  }
+}
+
+.gameWrapper {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  background: #090a0f 100%;
+  display: flex;
+  justify-content: center;
+}
+.gameMenuButton {
+  width: 100px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+}
+.pausetrue {
+  background: #000000de 100%;
+}
+.pauseTitle {
+  font-size: 60px;
+  text-align: center;
+  color: rgb(219, 208, 198);
+}
+.inGameMenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  padding: 50px;
+}
+.menuOn {
+  width: 500px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  h2 {
+    margin-bottom: 50px;
+  }
+  button {
+    width: 200px;
+    margin: 10px;
+  }
+}
+.block {
+  height: 100%;
+  width: 80px;
+  background-color: red;
+  position: absolute;
+  right: 0;
+  top: 0;
+  animation: blockSlide 10s infinite linear;
+}
+.hole {
+  height: 80px;
+  width: 80px;
+  background-color: white;
+  position: absolute;
+  right: 0;
+  top: 200px;
+  animation: blockSlide 10s infinite linear;
+}
+@keyframes blockSlide {
+  0% {
+    left: 1210px
+  }
+
+  100% {
+    left: -90px
+  }
+}
+.player {
+  height: 30px;
+  width: 50px;
+  position: absolute;
+  left: 100px;
+  z-index: 100000;
+  transition: all 0.05s linear;
+  top: 300px;
+  background-color: yellow;
+}
