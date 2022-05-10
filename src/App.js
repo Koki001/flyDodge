@@ -13,6 +13,9 @@ function App() {
   const handleExitGame = function(){
     setGameStartApp(false)
   }
+  const handleReset = function(){
+    setGameStartApp(false)
+  }
 
   return (
     <div className="mainGame">
@@ -20,7 +23,7 @@ function App() {
         gameStartApp === false 
         ? <MainMenu game={handleGameStartApp}/>
         : gameStartApp === true
-        ? <Game gameExit={handleExitGame}/>
+        ? <Game gameExit={handleExitGame} reset={handleReset}/>
         : null
       }
     </div>

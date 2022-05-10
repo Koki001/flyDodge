@@ -380,23 +380,26 @@ body {
 .block {
   height: 100%;
   width: 80px;
-  background-color: red;
+  background-image: url("../../public/laserBlock.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   position: absolute;
   right: 0;
   top: 0;
-  -webkit-animation: blockSlide 10s infinite linear;
-          animation: blockSlide 10s infinite linear;
+  -webkit-animation: blockSlide 4s infinite linear;
+          animation: blockSlide 4s infinite linear;
 }
 
 .hole {
   height: 80px;
   width: 80px;
-  background-color: white;
+  background-color: black;
   position: absolute;
   right: 0;
   top: 200px;
-  -webkit-animation: blockSlide 10s infinite linear;
-          animation: blockSlide 10s infinite linear;
+  -webkit-animation: blockSlide 4s infinite linear;
+          animation: blockSlide 4s infinite linear;
 }
 
 @-webkit-keyframes blockSlide {
@@ -425,7 +428,28 @@ body {
   -webkit-transition: all 0.05s linear;
   transition: all 0.05s linear;
   top: 300px;
-  background-color: yellow;
+}
+.player img {
+  width: 100%;
+}
+
+.controls {
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+}
+.controls input {
+  width: 20px;
+}
+
+.scoreDiv {
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
+.scoreDiv .score {
+  color: white;
+  font-size: 20px;
 }
 
 #stars {
