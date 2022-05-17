@@ -24,8 +24,8 @@ const Game = function (props){
  
   }, [])
   useEffect(function(){
-    blockRef.current.style["animation-duration"] = 2 + "s"
-    holeRef.current.style["animation-duration"] = 2 + "s"
+    blockRef.current.style["animation-duration"] = 5 + "s"
+    holeRef.current.style["animation-duration"] = 5 + "s"
   }, [])
 
   useEffect(function(){
